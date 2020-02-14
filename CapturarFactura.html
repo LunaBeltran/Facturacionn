@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body class="container">
+<form action="nueva-factura.php" method="POST">
+    <div>
+        <h4>Capturar Factura</h4>
+        <p>Ingrese sus datos de facturación</p>
+        <fieldset class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" class="form-control" required="">
+            <label for="lugar">Lugar de expedición:</label>
+            <input type="text" name="lugar" class="form-control" id="lugar" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="numero">Número de Certificado:</label>
+            <input type="text" name="numero" class="form-control" id="numero" required="">
+            <label for="serie">Serie:</label>
+            <input type="text" name="serie" class="form-control" id="serie" required="">
+            <label for="folio" name="folio">Folio</label>
+            <input type="text" name="folio" class="form-control" id="folio" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="clave">Clave del producto</label>
+            <input type="text" name="clave" class="form-control" id="clave" required="">
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" name="cantidad" class="form-control" id="cantidad" required="">
+            <label for="concepto">Concepto:</label>
+            <input type="text" name="conepto" class="form-control" id="concepto" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="forma">Forma de pago</label>
+            <select class="form-control" id="forma" name="forma">
+                <option>Por definir</option>
+                <option>Por definir</option>
+                <option>Por definir</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="metodo">Método de pago</label>
+            <select class="form-control" id="metodo" name="metodo">
+                <option>Pago en parcialidades</option>
+                <option>Pago en parcialidades</option>
+                <option>Pago en parcialidades</option>
+            </select>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+</body>
+</html>

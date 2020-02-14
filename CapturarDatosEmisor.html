@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Facturacion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body class="container">
+<form action="" method="POST">
+    <div>
+        <h4>Nuevo Cliente</h4>
+        <p>Datos el emisor</p>
+        <fieldset class="form-group">
+            <label for="nombre">Nombre o Razón social:</label>
+            <input type="text" name="nombre" class="form-control" id="nombre" required="">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+            <label class="custom-label" for="rfc">RFC:</label>
+            <input type="text" name="rfc" class="custom-input form-control" id="rfc" required="">
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" name="domicilio" class="form-control" id="domicilio" required="">
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+</body>
+</html>
